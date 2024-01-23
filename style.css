@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+  }
+  *{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+section{
+  scroll-margin: 50px;
+}
+
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+  }
+  header{
+    background-color:var(--purple300) ;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  li{
+    font-size: 22px;
+  }
+  .container{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 15px 0;
+  }
+  nav ul{
+    display: flex;
+    gap: 20px;
+  }
+  .logo{
+    font-size: 32px;
+  }
+  nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.3s ease-in;
+  }
+ nav ul li{
+    border-bottom:2px solid transparent;
+    transition: 0.3s ease-in;
+ }  
+
+ .hero-section{
+    background-image: url(images/hero_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+ }
+ .hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ }
+ .hero-section h1{
+    font-size: 96px;
+ }
+ .hero-section h3{
+    font-size: 32px;
+ }
+ .music-section{
+    padding-top: 50px;
+    background-color: var(--purple500);
+ }
+ .music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ .ipad-iphone-img{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+ }
+button{
+    padding: 10px 15px;
+    border: null;
+    transition: 0.2s ease-in-out ;
+}
+button:hover{
+    opacity: 0.8px;
+    transition: 0.2s ease-in-out;
+}
+.primary-btn{
+    background-color: var(--red600);
+    color: white;
+}
+.secondary-btn{
+    background-color: var(--purple300);
+    color: white;
+}
+.about-music{
+    margin-top: 450px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.video-section{
+    background-image: url(images/video.png);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+
+.gift-section{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  gap: 50px;
+
+}
+.gift-content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-upper .container{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.footer-upper{
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.footer-upper h4{
+  font-size: 25px;
+  padding-bottom: 10px;
+ margin-bottom: 10px;
+ border-bottom: 2px solid white;
+}
+.footer-lower{
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+    li{
+        font-size: 13px;
+      }
+    .logo{
+        font-size: 20px;
+    }
+    .container{
+        max-width: 1100px;
+        margin: 0 15px;
+      }
+      .hero-section h1{
+        font-size: 76px;
+     }
+     .hero-section h3{
+        font-size: 25px;
+     }
+
+     .ipad-iphone-img{
+        margin-top: -190px;
+        position: relative;
+        height: 250px;
+        top: 170px;
+     }
+  #pic{
+    width: 380px;
+    }
+    .about-music{
+        margin-top: 250px;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        gap: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    #mac{
+        width: 380px;
+    }
+    .gift-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 30px 0px;
+      gap: 50px;
+    
+    }
+  #gift{
+
+width: 360px;  }     
+    
+    .secondary-btn{
+      display: grid;
+      place-items: center;
+      justify-content: center;
+    }
+    .footer-upper h4{
+      font-size:10px;
+      padding-bottom: 5px;
+     margin-bottom: 5px;
+    }
+    .footer-upper{
+      background-color: var(--purple600);
+      padding: 10px;
+    }
+    .footer-upper li{
+      font-size:10px ;
+    }
+
+}
